@@ -25,10 +25,20 @@ class Queue<T> {
     return lastItem;
   }
 
+  List<T> get value => _queue;
+
+
   int get length => _queue.length;
 
   bool isEmpty(){
     return _queue.isEmpty;
+  }
+
+  @override
+  String toString() {
+    // TODO: implement toString
+
+    return _queue.toString();
   }
 }
 
